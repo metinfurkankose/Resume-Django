@@ -1,6 +1,15 @@
 {% extends 'layout.html' %}
+{% load static %}
 {% block content %}
 <div class="row">
-    <h1 class="text-center p-3">ANASAYFA</h1>
+    <h1 class="resume_content_header_title">ANASAYFA</h1>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{% get_media_prefix %}deneme.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
 </div>
 {% endblock %}

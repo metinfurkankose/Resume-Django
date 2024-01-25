@@ -1,3 +1,4 @@
+{% load static %}
 <meta charset="UTF-8">
 <title>
     {% if request.resolver_match.url_name == 'index' %}Anasayfa{% endif %}
@@ -8,3 +9,4 @@
       rel="stylesheet" 
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
       crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
