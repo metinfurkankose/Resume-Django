@@ -3,11 +3,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="{% get_media_prefix %}img/favicon.png" type="image/png">
-<title>
+<title>{{ site_title }} -
     {% if request.resolver_match.url_name == 'index' %}Anasayfa{% endif %}
     {% if request.resolver_match.url_name == 'about' %}Hakkımızda{% endif %}
     {% if request.resolver_match.url_name == 'contact' %}İletişim{% endif %}
 </title>
+<meta name="keywords" content="{{ side_keywords }}">
+<meta name="description" content="{{ site_description }}">
+<meta name="author" content="Metin Furkan KÖSE">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
