@@ -2,7 +2,7 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="{% get_media_prefix %}img/favicon.png" type="image/png">
+<link rel="icon" href="{{ site_logo.url }}" type="image/png">
 <title>{{ site_title }} -
     {% if request.resolver_match.url_name == 'index' %}Anasayfa{% endif %}
     {% if request.resolver_match.url_name == 'about' %}Hakkımızda{% endif %}
